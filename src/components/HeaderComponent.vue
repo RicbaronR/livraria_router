@@ -4,20 +4,20 @@ defineEmits(['click-cart'])
 
 </script>
 <template>
-    <header>
+  <header>
     <nav>
       <h1>
-        <a href="#">
+        <RouterLink to="/">
           IFbooks
           <span class="logo-title"> Apreço a livros </span>
-        </a>
+        </RouterLink>
       </h1>
       <div class="search-wrapper">
         <input type="text" class="search" placeholder="Buscar..." />
       </div>
       <ul>
         <li>Termos</li>
-        <li>Equipe</li>
+        <li><RouterLink to="/equipe">Equipe</RouterLink></li>
         <li>Envio</li>
         <li>Devoluções</li>
       </ul>
